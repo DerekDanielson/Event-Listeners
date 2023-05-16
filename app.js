@@ -13,3 +13,6 @@ clearBtn.addEventListener('click', function(){
 clearBtn.addEventListener('click', () => alert('Clear Items'));
 clearBtn.addEventListener('click', () => console.log('Clear Items'));
 clearBtn.addEventListener('click', onClear);
+
+
+setTimeout(() => clearBtn.removeEventListener('click', onClear), 5000);
